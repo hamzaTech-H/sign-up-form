@@ -1,0 +1,157 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(217, 230, 214)
+}
+
+
+.image-container {
+    background-image: url(images/halie-west.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex : 3 ;
+    position: relative;
+}
+
+.image-container > p {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.image-container > p a {
+    color: white;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    position: relative;
+    top: 150px;
+    padding: 12px 0;   
+    gap: 10px;
+}
+
+.logo img {
+    width : 75px;
+}
+
+
+@font-face {
+    font-family: my-font;
+    src: url(fonts/Norse-Bold.otf);
+}
+.logo p {
+    margin: 0;
+    color: white;
+    font-size: 75px;
+    font-weight: bolder;
+    font-family:my-font , sans-serif;
+}
+
+
+
+
+
+.main {
+    flex : 4;
+    align-self: center;  
+}
+
+.main > div {
+    padding: 40px 20px ;
+    font-size: 20px;
+    font-weight: bold;  
+}
+
+
+.form-container {
+    background-color: rgb(255, 255, 255);
+    padding:  20px 20px 40px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.form-container p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 40px;  
+}
+
+.form-inputs div {
+    width: 225px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.form-container+div {
+    padding: 20px;
+} /* or we can use  form:last-child */
+
+
+form:last-child a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+label {
+    font-size: 12px;
+}
+input {
+    padding: 5px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;   
+}
+
+input:focus {   
+    outline: none;
+    border-color: blue;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #596D48 ;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+.error {
+    border: 1px solid red;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+
+@media (min-width : 1200px) {
+    .form-inputs {
+        width: 500px;
+    }
+} 
+

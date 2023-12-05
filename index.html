@@ -3,10 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <div class="image-container">
+        <div class="logo"> 
+            <img src="images/odin-lined.png" >
+            <p> Odin </p>
+        </div>
+        <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
+    </div>
+
     
+
+    <div class="main">
+
+        <div>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <br>
+            Sign up <i>now</i> to get started.
+            <br><br>
+            You <i>know</i> you want to.
+        </div>        
+        <form action="#" method="post">
+             
+            <div class="form-container">
+                <p> Let's do this!</p>
+                <div class="form-inputs">
+                    <div>
+                        <label for="first-name"> FIRST NAME </label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                
+                    <div>
+                        <label for="last-name"> LAST NAME </label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div>
+                        <label for="email"> EMAIL </label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone-number"> PHONE NUMBER </label>
+                        <input type="number" name="phone-number" id="phone-number" required>
+                    </div>
+                    <div>
+                        <label for="password"> PASSWORD </label>
+                        <input class="error" type="password" name="password" id="password" required>
+                        <span class="error-message"> *passwords do not match </span>
+                    </div>
+                    <div>
+                        <label for="confirm-password"> CONFIRM PASSWORD </label>
+                        <input class="error" type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div>
+                <button type="submit"> Create Account </button>
+                
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+            
+
+        </form>
+    </div>
 </body>
 </html>
